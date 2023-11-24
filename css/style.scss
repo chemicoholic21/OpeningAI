@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//mixin
+$default-font: 'Open Sans', sans-serif; //$-sass variable(keynote feature of sass)
+body {
+    font-family: $default-font;
+    background-color: #000;
+    color: #fff;
+    font-style: normal;
+    width: 100vw; // Change here
+    overflow-x: hidden;
+}
+
+main {
+    //nesting to avoid class repetition
+    width: 100%;
+    section {
+        height: 100vh;
+        width: 100vw; // Change here
+    }
+
+    .one {
+        position: relative;
+        display: grid;
+        place-items: center;
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            z-index: 10;
+        }
+
+        .bottom {
+            position: absolute;
+            bottom: 20px;
+            z-index: 20;
+            width: 860px;
+            padding: 30px;
+
+            h2 {
+                font-family: $default-font;
+                font-weight: 400;
+                font-size: 73px;
+                line-height: 73px;
+                letter-spacing: -1.46px;
+            }
+
+            .hero-button {
+                padding: 5px 12px 7px;
+                font-size: 16px;
+                background: transparent;
+                border: 1px solid #fff;
+                color: #fff;
+                border-radius: 3.6px;
+                margin-top: 50px;
+            }
+        }
+    }
+
+    .two {
+        width: 95vw; // Change here
+        margin: auto;
+
+        .d1 {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            width: 100%;
+            height: 250px;
+            align-items: center;
+
+            .d11 {
+                margin: 20px;
+                width: 30%;
+                text-align: left;
+                height: fit-content;
+
+                h2 {
+                    width: 100%;
+                    margin-bottom: 20px;
+                    font-weight: 600;
+                    font-size: 28px;
+                }
+
+                b {
+                    font-weight: 600;
+                    font-size: 16px;
+                }
+            }
+        }
+
+        hr {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .d2 {
+            .d21 {
+                display: flex;
+                justify-content: space-between;
+                height: 56px;
+                align-items: center;
+                margin-top: 12px;
+
+                h1 {
+                    font-family: 'Cormorant Garamond', serif;
+                    font-size: 52px;
+                    font-weight: 400;
+                }
+
+                b {
+                    font-weight: 500;
+                }
+            }
+
+            .d22-container {
+                margin-top: 50px;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                height: auto;
+                margin-bottom: 90px;
+
+                .d22 {
+                    margin: 10px;
+
+                    img {
+                        width: 307px;
+                        height: 307px;
+                    }
+
+                    h2 {
+                        font-size: 18px;
+                        font-weight: 600;
+                        margin-top: 10px;
+                        line-height: 23.4px;
+                    }
+
+                    p {
+                        margin-top: 4px;
+                    }
+                }
+            }
+        }
+        .d3 {
+            color:#fff;
+            .d31 {
+                display: flex;
+                margin: 0 0 0 -24px;
+                // justify-content: space-between;
+                // height: 56px;
+                // align-items: center;
+                // margin-top: 12px;
+                
+
+                h1 {
+                    font-family: 'Cormorant Garamond', serif;
+                    font-size: 52px;
+                    font-weight: lighter;
+                    padding: 0 44px 0 0;
+                    letter-spacing: -0.28px;
+                    margin-right: 355px;
+                    margin-top: 5px;
+                    margin-left: 10px;
+                }
+
+                b {
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 23.4px;
+                    
+                }
+                h2{
+                    font-family: $default-font;
+                    font-size: 26px;
+                    font-weight: 300;
+                    grid-area: auto;
+                    letter-spacing: -0.28px;
+                    line-height: 33.6px;
+                    font-weight: 500;
+                      
+                    // margin: 0 0 0 420px;
+                    
+                    margin-top: 14px;
+                    margin-bottom: 80px;
+                }
+            }
+    }
+    .ctrlimg{
+        margin-left: -32px;
+        margin-bottom: 80px;
+    }
+    .d4 {
+        .d41 {
+            display: flex;
+            // justify-content: space-between;
+            // height: 56px;
+            // align-items: center;
+            // margin-top: 12px;
+            
+
+            h1 {
+                font-family: 'Cormorant Garamond', serif;
+                font-size: 52px;
+                font-weight: lighter;
+                margin-right: 475px;
+            }
+
+            b {
+                font-weight: 500;
+                font-size: 18px;
+            }
+            h2{
+                font-family: $default-font;
+                font-size: 28px;
+                margin-top: 14px;
+                // grid-area: auto;
+                // letter-spacing: -0.28px;
+                // line-height: 33.6px;
+                font-weight: 500;
+            }
+        }
+        .d4-container {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            height: auto;
+            margin-bottom: 90px;
+        
+            .d4 {
+                margin: 10px;
+        
+                img {
+                    width: 307px;
+                    height: 307px;
+                }
+        
+                h2 {
+                    font-size: 18px;
+                    font-weight: 600;
+                    margin-top: 10px;
+                    line-height: 23.4px;
+                }
+        
+                p {
+                    margin-top: 4px;
+                }
+}
+
+    
+ 
+
+}
+}
+.three {
+    .d31 {
+        display: flex;
+        h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 56px;
+            font-weight: lighter;
+            margin-right: 475px;
+        }
+
+        b {
+            font-weight: 500;
+            font-size: 18px;
+        }
+        h2{
+            font-family: $default-font;
+            font-size: 28px;
+            margin-top: 14px;
+            font-weight: 500;
+        }
+    }
+    .d3-container {
+        margin-top: 45px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: auto;
+        margin-bottom: 90px;
+    
+        .d03 {
+            margin: 10px;
+    
+            img {
+                width: 307px;
+                height: 307px;
+            }
+    
+            h2 {
+                font-size: 18px;
+                font-weight: 600;
+                margin-top: 10px;
+                line-height: 23.4px;
+            }
+    
+            p {
+                margin-top: 4px;
+            }
+}
+    }
+.five{
+    .d51{
+        display: flex;
+        h1{
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 56px;
+            font-weight: lighter;
+            margin-right: 475px;
+        }
+
+        b {
+            font-weight: 500;
+            font-size: 18px;
+        }
+        h2{
+            font-family: $default-font;
+            font-size: 28px;
+            margin-top: 14px;
+            font-weight: 500;
+        } 
+        
+    }
+
+
+.footer{
+    display: flex;
+    .footer1{
+        display: flex;
+ul{
+    display: flex;
+    .column{
+    list-style-type: none;
+    display: flex;
+}
+}
+}
+}
+    }
+}
+    }
+}
