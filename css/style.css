@@ -134,6 +134,7 @@ main .two .d3 {
 }
 main .two .d3 .d31 {
   display: flex;
+  margin-top: 10px;
   margin: 0 0 0 -24px;
 }
 main .two .d3 .d31 h1 {
@@ -142,9 +143,11 @@ main .two .d3 .d31 h1 {
   font-weight: lighter;
   padding: 0 44px 0 0;
   letter-spacing: -0.28px;
-  margin-right: 355px;
   margin-top: 5px;
   margin-left: 10px;
+  width: -moz-fit-content;
+  width: fit-content;
+  flex: 1;
 }
 main .two .d3 .d31 b {
   font-weight: 500;
@@ -161,6 +164,7 @@ main .two .d3 .d31 h2 {
   font-weight: 500;
   margin-top: 14px;
   margin-bottom: 80px;
+  flex: 1;
 }
 main .two .ctrlimg {
   margin-left: -32px;
@@ -254,12 +258,14 @@ main .two .three .d3-container .d03 p {
 }
 main .two .three .five .d51 {
   display: flex;
+  margin-bottom: 100px;
 }
 main .two .three .five .d51 h1 {
   font-family: "Cormorant Garamond", serif;
   font-size: 56px;
   font-weight: lighter;
-  margin-right: 475px;
+  margin-left: -20px;
+  flex: 1;
 }
 main .two .three .five .d51 b {
   font-weight: 500;
@@ -267,9 +273,10 @@ main .two .three .five .d51 b {
 }
 main .two .three .five .d51 h2 {
   font-family: "Open Sans", sans-serif;
-  font-size: 28px;
+  font-size: 26px;
   margin-top: 14px;
   font-weight: 500;
+  flex: 1;
 }
 main .two .three .five .footer {
   display: flex;
@@ -283,4 +290,40 @@ main .two .three .five .footer .footer1 ul {
 main .two .three .five .footer .footer1 ul .column {
   list-style-type: none;
   display: flex;
+}
+main .two .three .six {
+  display: flex;
+}
+main .two .three .six .six1 h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 50px;
+  margin-top: 14px;
+  font-weight: 450;
+  flex: 1;
+}
+main .two .three .six .six1 p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  margin-top: 14px;
+  font-weight: 500;
+}
+main .two .three .six img {
+  flex: 1;
+  height: 639px;
+  font-weight: 639px;
+  margin-top: 23px;
+  margin-bottom: 192px;
+}
+main .two .three .seven h1 {
+  font-size: 73px;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+}
+main .two .three .seven .career-button {
+  border: #fff solid 1px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 12px 7px;
+  font-size: 28px;
+  margin-top: 50px;
 }/*# sourceMappingURL=style.css.map */

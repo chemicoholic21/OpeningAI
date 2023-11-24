@@ -154,22 +154,21 @@ main {
             color:#fff;
             .d31 {
                 display: flex;
+                margin-top: 10px;
                 margin: 0 0 0 -24px;
-                // justify-content: space-between;
-                // height: 56px;
-                // align-items: center;
-                // margin-top: 12px;
-                
-
+                // border: #fff solid 1px;
                 h1 {
                     font-family: 'Cormorant Garamond', serif;
                     font-size: 52px;
                     font-weight: lighter;
                     padding: 0 44px 0 0;
                     letter-spacing: -0.28px;
-                    margin-right: 355px;
+                    // margin-right: 355px;
                     margin-top: 5px;
                     margin-left: 10px;
+                    // border: #fff solid 1px;
+                    width: fit-content;
+                    flex: 1;
                 }
 
                 b {
@@ -186,11 +185,10 @@ main {
                     letter-spacing: -0.28px;
                     line-height: 33.6px;
                     font-weight: 500;
-                      
-                    // margin: 0 0 0 420px;
-                    
+                     
                     margin-top: 14px;
                     margin-bottom: 80px;
+                    flex: 1;
                 }
             }
     }
@@ -313,11 +311,13 @@ main {
 .five{
     .d51{
         display: flex;
+        margin-bottom: 100px;
         h1{
             font-family: 'Cormorant Garamond', serif;
             font-size: 56px;
             font-weight: lighter;
-            margin-right: 475px;
+            margin-left: -20px;
+            flex: 1;
         }
 
         b {
@@ -326,9 +326,10 @@ main {
         }
         h2{
             font-family: $default-font;
-            font-size: 28px;
+            font-size: 26px;
             margin-top: 14px;
             font-weight: 500;
+            flex: 1;
         } 
         
     }
@@ -348,6 +349,52 @@ ul{
 }
 }
     }
+.six{
+    display: flex;
+    .six1{
+    
+    h2{
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 50px;
+        margin-top: 14px;
+        font-weight: 450;
+        flex: 1;
+        
+    }
+    p{
+        font-family: $default-font;
+        font-size: 18px;
+        margin-top: 14px;
+        font-weight: 500;
+        
+    }
+
+}
+img{
+    flex: 1;
+    height: 639px;
+    font-weight: 639px;
+    margin-top: 23px;
+    margin-bottom: 192px;
+}
+}
+.seven{
+    h1{
+        font-size: 73px;
+        font-family: 'Cormorant Garamond', serif;
+        font-weight: 500;
+        
+    }
+    .career-button{
+        border: #fff solid 1px;
+        text-align: center;
+        border-radius: 5px;
+        padding: 5px 12px 7px;
+        font-size: 28px;
+        margin-top: 50px;
+        
+    }
+}
 }
     }
 }
