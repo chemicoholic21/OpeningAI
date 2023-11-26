@@ -278,19 +278,6 @@ main .two .three .five .d51 h2 {
   font-weight: 500;
   flex: 1;
 }
-main .two .three .five .footer {
-  display: flex;
-}
-main .two .three .five .footer .footer1 {
-  display: flex;
-}
-main .two .three .five .footer .footer1 ul {
-  display: flex;
-}
-main .two .three .five .footer .footer1 ul .column {
-  list-style-type: none;
-  display: flex;
-}
 main .two .three .six {
   display: flex;
 }
@@ -315,9 +302,10 @@ main .two .three .six img {
   margin-bottom: 192px;
 }
 main .two .three .seven h1 {
-  font-size: 73px;
+  font-size: 80px;
   font-family: "Cormorant Garamond", serif;
   font-weight: 500;
+  margin-bottom: 100px;
 }
 main .two .three .seven .career-button {
   border: #fff solid 1px;
@@ -325,5 +313,31 @@ main .two .three .seven .career-button {
   border-radius: 5px;
   padding: 5px 12px 7px;
   font-size: 28px;
-  margin-top: 50px;
+  margin-bottom: 200px;
+}
+main .two .three .seven .career-button p {
+  padding: 7px 16px 9px;
+}
+
+.footer {
+  margin-left: 100px;
+}
+.footer .container {
+  max-width: 1170px;
+  margin: auto;
+}
+.footer .container .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer .container .row .footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer .container .row .footer-col ul {
+  list-style: none;
+}
+.footer .container .row .footer-col ul a {
+  text-decoration: none;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */

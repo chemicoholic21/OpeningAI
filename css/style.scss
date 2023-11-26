@@ -335,19 +335,6 @@ main {
     }
 
 
-.footer{
-    display: flex;
-    .footer1{
-        display: flex;
-ul{
-    display: flex;
-    .column{
-    list-style-type: none;
-    display: flex;
-}
-}
-}
-}
     }
 .six{
     display: flex;
@@ -380,9 +367,10 @@ img{
 }
 .seven{
     h1{
-        font-size: 73px;
+        font-size: 80px;
         font-family: 'Cormorant Garamond', serif;
         font-weight: 500;
+        margin-bottom: 100px;
         
     }
     .career-button{
@@ -391,10 +379,41 @@ img{
         border-radius: 5px;
         padding: 5px 12px 7px;
         font-size: 28px;
-        margin-top: 50px;
+        margin-bottom: 200px;
+        p{
+            padding: 7px 16px 9px;
+            
+        }
+        
         
     }
 }
 }
     }
+  
+  }  
+.footer{
+    margin-left: 100px;
+    
+    .container{
+        
+        max-width: 1170px;
+        margin: auto;
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+            .footer-col{
+                width: 25%;
+                padding: 0 15px;
+                ul{
+                    list-style:none;
+                    a{
+                        text-decoration: none;
+                        color: #fff;
+                    }
+
+            }
+        }
+    }
+}
 }
