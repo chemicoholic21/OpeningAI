@@ -1,0 +1,15 @@
+@media screen and (max-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+    border: 120px solid #fff;
+  }
+  body main .one {
+    border: 10px solid #fff;
+  }
+  body main .one video {
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 100%;
+  }
+}/*# sourceMappingURL=responsive.css.map */

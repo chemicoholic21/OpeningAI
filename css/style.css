@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #000;
@@ -18,7 +22,7 @@ main {
   width: 100%;
 }
 main section {
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
 }
 main .one {
@@ -66,7 +70,7 @@ main .two .d1 {
   justify-content: space-evenly;
   flex-wrap: wrap;
   width: 100%;
-  height: 250px;
+  min-height: 250px;
   align-items: center;
 }
 main .two .d1 .d11 {
@@ -129,15 +133,15 @@ main .two .d2 .d22-container .d22 h2 {
 main .two .d2 .d22-container .d22 p {
   margin-top: 4px;
 }
-main .two .d3 {
+main .d3 {
   color: #fff;
 }
-main .two .d3 .d31 {
+main .d3 .d31 {
   display: flex;
   margin-top: 10px;
   margin: 0 0 0 -24px;
 }
-main .two .d3 .d31 h1 {
+main .d3 .d31 h1 {
   font-family: "Cormorant Garamond", serif;
   font-size: 52px;
   font-weight: lighter;
@@ -149,12 +153,12 @@ main .two .d3 .d31 h1 {
   width: fit-content;
   flex: 1;
 }
-main .two .d3 .d31 b {
+main .d3 .d31 b {
   font-weight: 500;
   font-size: 18px;
   line-height: 23.4px;
 }
-main .two .d3 .d31 h2 {
+main .d3 .d31 h2 {
   font-family: "Open Sans", sans-serif;
   font-size: 26px;
   font-weight: 300;
@@ -166,30 +170,30 @@ main .two .d3 .d31 h2 {
   margin-bottom: 80px;
   flex: 1;
 }
-main .two .ctrlimg {
+main .ctrlimg {
   margin-left: -32px;
   margin-bottom: 80px;
 }
-main .two .d4 .d41 {
+main .d4 .d41 {
   display: flex;
 }
-main .two .d4 .d41 h1 {
+main .d4 .d41 h1 {
   font-family: "Cormorant Garamond", serif;
   font-size: 52px;
   font-weight: lighter;
   margin-right: 475px;
 }
-main .two .d4 .d41 b {
+main .d4 .d41 b {
   font-weight: 500;
   font-size: 18px;
 }
-main .two .d4 .d41 h2 {
+main .d4 .d41 h2 {
   font-family: "Open Sans", sans-serif;
   font-size: 28px;
   margin-top: 14px;
   font-weight: 500;
 }
-main .two .d4 .d4-container {
+main .d4 .d4-container {
   margin-top: 50px;
   display: flex;
   justify-content: space-between;
@@ -197,42 +201,42 @@ main .two .d4 .d4-container {
   height: auto;
   margin-bottom: 90px;
 }
-main .two .d4 .d4-container .d4 {
+main .d4 .d4-container .d4 {
   margin: 10px;
 }
-main .two .d4 .d4-container .d4 img {
+main .d4 .d4-container .d4 img {
   width: 307px;
   height: 307px;
 }
-main .two .d4 .d4-container .d4 h2 {
+main .d4 .d4-container .d4 h2 {
   font-size: 18px;
   font-weight: 600;
   margin-top: 10px;
   line-height: 23.4px;
 }
-main .two .d4 .d4-container .d4 p {
+main .d4 .d4-container .d4 p {
   margin-top: 4px;
 }
-main .two .three .d31 {
+main .three .d31 {
   display: flex;
 }
-main .two .three .d31 h1 {
+main .three .d31 h1 {
   font-family: "Cormorant Garamond", serif;
   font-size: 56px;
   font-weight: lighter;
   margin-right: 475px;
 }
-main .two .three .d31 b {
+main .three .d31 b {
   font-weight: 500;
   font-size: 18px;
 }
-main .two .three .d31 h2 {
+main .three .d31 h2 {
   font-family: "Open Sans", sans-serif;
   font-size: 28px;
   margin-top: 14px;
   font-weight: 500;
 }
-main .two .three .d3-container {
+main .three .d3-container {
   margin-top: 45px;
   display: flex;
   justify-content: space-between;
@@ -240,74 +244,74 @@ main .two .three .d3-container {
   height: auto;
   margin-bottom: 90px;
 }
-main .two .three .d3-container .d03 {
+main .three .d3-container .d03 {
   margin: 10px;
 }
-main .two .three .d3-container .d03 img {
+main .three .d3-container .d03 img {
   width: 307px;
   height: 307px;
 }
-main .two .three .d3-container .d03 h2 {
+main .three .d3-container .d03 h2 {
   font-size: 18px;
   font-weight: 600;
   margin-top: 10px;
   line-height: 23.4px;
 }
-main .two .three .d3-container .d03 p {
+main .three .d3-container .d03 p {
   margin-top: 4px;
 }
-main .two .three .five .d51 {
+main .three .five .d51 {
   display: flex;
   margin-bottom: 100px;
 }
-main .two .three .five .d51 h1 {
+main .three .five .d51 h1 {
   font-family: "Cormorant Garamond", serif;
   font-size: 56px;
   font-weight: lighter;
   margin-left: -20px;
   flex: 1;
 }
-main .two .three .five .d51 b {
+main .three .five .d51 b {
   font-weight: 500;
   font-size: 18px;
 }
-main .two .three .five .d51 h2 {
+main .three .five .d51 h2 {
   font-family: "Open Sans", sans-serif;
   font-size: 26px;
   margin-top: 14px;
   font-weight: 500;
   flex: 1;
 }
-main .two .three .six {
+main .three .six {
   display: flex;
 }
-main .two .three .six .six1 h2 {
+main .three .six .six1 h2 {
   font-family: "Cormorant Garamond", serif;
   font-size: 50px;
   margin-top: 14px;
   font-weight: 450;
   flex: 1;
 }
-main .two .three .six .six1 p {
+main .three .six .six1 p {
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
   margin-top: 14px;
   font-weight: 500;
 }
-main .two .three .six img {
+main .three .six img {
   flex: 1;
   height: 639px;
   font-weight: 639px;
   margin-top: 23px;
   margin-bottom: 192px;
 }
-main .two .three .seven h1 {
+main .three .seven h1 {
   font-size: 80px;
   font-family: "Cormorant Garamond", serif;
   font-weight: 500;
   margin-bottom: 100px;
 }
-main .two .three .seven .career-button {
+main .three .seven .career-button {
   border: #fff solid 1px;
   text-align: center;
   border-radius: 5px;
@@ -315,7 +319,7 @@ main .two .three .seven .career-button {
   font-size: 28px;
   margin-bottom: 200px;
 }
-main .two .three .seven .career-button p {
+main .three .seven .career-button p {
   padding: 7px 16px 9px;
 }
 

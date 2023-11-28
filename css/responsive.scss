@@ -1,0 +1,23 @@
+@media screen and (max-width:768px){
+
+    body{
+        margin:0;
+        padding:0;
+
+        border:120px solid #fff;
+
+        main{
+
+            .one{
+                border:10px solid #fff;
+                video{
+                    width:fit-content;
+                    height:100%;
+                   }
+            }
+        }
+    }
+
+    
+    
+}

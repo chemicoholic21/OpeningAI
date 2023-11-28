@@ -6,6 +6,9 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+}
 //mixin
 $default-font: 'Open Sans', sans-serif; //$-sass variable(keynote feature of sass)
 body {
@@ -21,16 +24,15 @@ main {
     //nesting to avoid class repetition
     width: 100%;
     section {
-        height: 100vh;
-        width: 100vw; // Change here
+        min-height:100vh;
+        width: 100vw;
+       
     }
-
     .one {
         position: relative;
         display: grid;
         place-items: center;
-
-        video {
+       video {
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -62,95 +64,100 @@ main {
                 border-radius: 3.6px;
                 margin-top: 50px;
             }
+            
+        }
+}
+   .two {
+    width: 95vw;
+    margin: auto;
+
+    .d1 {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 100%;
+        min-height: 250px;
+        align-items: center;
+
+        .d11 {
+            margin: 20px;
+            width: 30%;
+            text-align: left;
+            height: fit-content;
+
+            h2 {
+                width: 100%;
+                margin-bottom: 20px;
+                font-weight: 600;
+                font-size: 28px;
+            }
+
+            b {
+                font-weight: 600;
+                font-size: 16px;
+            }
         }
     }
 
-    .two {
-        width: 95vw; // Change here
-        margin: auto;
+    hr {
+        width: 100%;
+        margin: 0 auto;
+    }
 
-        .d1 {
+    .d2 {
+        .d21 {
             display: flex;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-            width: 100%;
-            height: 250px;
+            justify-content: space-between;
+            height: 56px;
             align-items: center;
+            margin-top: 12px;
 
-            .d11 {
-                margin: 20px;
-                width: 30%;
-                text-align: left;
-                height: fit-content;
+            h1 {
+                font-family: 'Cormorant Garamond', serif;
+                font-size: 52px;
+                font-weight: 400;
+            }
+
+            b {
+                font-weight: 500;
+            }
+        }
+
+        .d22-container {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            height: auto;
+            margin-bottom: 90px;
+
+            .d22 {
+                margin: 10px;
+
+                img {
+                    width: 307px;
+                    height: 307px;
+                }
 
                 h2 {
-                    width: 100%;
-                    margin-bottom: 20px;
+                    font-size: 18px;
                     font-weight: 600;
-                    font-size: 28px;
+                    margin-top: 10px;
+                    line-height: 23.4px;
                 }
 
-                b {
-                    font-weight: 600;
-                    font-size: 16px;
-                }
-            }
-        }
-
-        hr {
-            width: 100%;
-            margin: 0 auto;
-        }
-
-        .d2 {
-            .d21 {
-                display: flex;
-                justify-content: space-between;
-                height: 56px;
-                align-items: center;
-                margin-top: 12px;
-
-                h1 {
-                    font-family: 'Cormorant Garamond', serif;
-                    font-size: 52px;
-                    font-weight: 400;
-                }
-
-                b {
-                    font-weight: 500;
-                }
-            }
-
-            .d22-container {
-                margin-top: 50px;
-                display: flex;
-                justify-content: space-between;
-                align-items: flex-start;
-                height: auto;
-                margin-bottom: 90px;
-
-                .d22 {
-                    margin: 10px;
-
-                    img {
-                        width: 307px;
-                        height: 307px;
-                    }
-
-                    h2 {
-                        font-size: 18px;
-                        font-weight: 600;
-                        margin-top: 10px;
-                        line-height: 23.4px;
-                    }
-
-                    p {
-                        margin-top: 4px;
-                    }
+                p {
+                    margin-top: 4px;
                 }
             }
         }
-        .d3 {
+    }
+
+  
+}
+
+   
+    .d3 {
             color:#fff;
             .d31 {
                 display: flex;
@@ -391,7 +398,7 @@ img{
 }
     }
   
-  }  
+  
 .footer{
     margin-left: 100px;
     
@@ -417,6 +424,7 @@ img{
     }
 }
 }
+
 ///////////////////////////////////////
 /// 
 /// 
